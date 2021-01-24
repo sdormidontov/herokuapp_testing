@@ -1,318 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Menlo; color: #1b1f22; -webkit-text-stroke: #1b1f22}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 20.0px; font: 12.0px Menlo; color: #1b1f22; -webkit-text-stroke: #1b1f22; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Menlo; color: #1b1f22; -webkit-text-stroke: #1b1f22; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-    span.Apple-tab-span {white-space:pre}
-    table.t1 {background-color: #ffffff; border-collapse: collapse}
-    td.td1 {width: 128.4px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td2 {width: 128.4px; min-width: 50.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td3 {width: 814.7px; padding: 0.0px 10.0px 0.0px 10.0px}
-  </style>
+  <meta charset="UTF-8">
+  <title>Predict Insurance Bill</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
 </head>
+
 <body>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="top" class="td1">
-        <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Predict Insurance Bill&lt;/title&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>&lt;div class="login"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>&lt;h1&gt;Predict Insurance Bill&lt;/h1&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>&lt;!-- Form to enter new data for predictions<span class="Apple-converted-space">  </span>--&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;form action="{{ url_for('predict')}}"method="POST"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="age" placeholder="Age" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span></span>&lt;input type="text" name="sex" placeholder="Sex" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" name="bmi" placeholder="BMI" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" name="children" placeholder="Children" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" name="smoker" placeholder="Smoker" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" name="region" placeholder="Region" required="required" /&gt;&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button type="submit" class="btn btn-primary btn-block btn-large"&gt;Predict&lt;/button&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>&lt;br&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">   </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>{{pred}}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"></span><br></p>
-        <p class="p3"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s1"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+ <div class="login">
+	<h1>Predict Insurance Bill</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="age" placeholder="Age" required="required" /><br>
+    	<input type="text" name="sex" placeholder="Sex" required="required" /><br>
+        <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
+        <input type="text" name="children" placeholder="Children" required="required" /><br>
+        <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
+        <input type="text" name="region" placeholder="Region" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
 </body>
 </html>
